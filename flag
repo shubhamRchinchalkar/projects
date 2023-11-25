@@ -1,0 +1,16 @@
+var countryRequest = new XMLHttpRequest();
+countryRequest.open("GET", "https://restcountries.com/v3.1/all");
+countryRequest.addEventListener('load', function () {
+  console.log(this.response);
+  displayFlags(JSON.parse(this.response));
+});
+countryRequest.send();
+
+function displayFlags(data = []) {
+  const flags = data.map(country => ({
+    country: country.name.common,
+    flag: country.flags ? country.flags.png : "No flag available"
+  }));
+
+  console.log(JSON.stringify(flags, null, 2));
+}
