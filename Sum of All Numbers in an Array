@@ -1,0 +1,6 @@
+let sumOfNumbers = arr => arr.reduce((sum, num) => sum + num, 0);
+
+// Example usage
+let numbers = [1, 2, 3, 4, 5];
+let result = sumOfNumbers(numbers);
+console.log(result);

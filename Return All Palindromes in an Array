@@ -1,0 +1,11 @@
+let isPalindrome = str => {
+  let reverseString = str.split('').reverse().join('');
+  return str === reverseString;
+};
+
+let getPalindromes = arr => arr.filter(str => isPalindrome(str));
+
+// Example usage
+let words = ["level", "hello", "radar", "world"];
+let palindromes = getPalindromes(words);
+console.log(palindromes);
