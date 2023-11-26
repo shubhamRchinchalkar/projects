@@ -1,0 +1,19 @@
+//Anonymous Function
+let rotateArray = function(arr, k) {
+  k = k % arr.length;
+  return arr.slice(k).concat(arr.slice(0, k));
+};
+
+// Example usage
+let numbers = [1, 2, 3, 4, 5];
+let rotatedArray = rotateArray(numbers, 2);
+console.log(rotatedArray);
+
+//IIFE
+let rotatedArray = (function(arr, k) {
+    k = k % arr.length;
+    return arr.slice(k).concat(arr.slice(0, k));
+  })([1, 2, 3, 4, 5], 2);
+  
+  console.log(rotatedArray);
+  
