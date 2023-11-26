@@ -1,0 +1,17 @@
+//Anonymous Function
+let sumOfNumbers = function(arr) {
+  return arr.reduce((sum, num) => sum + num, 0);
+};
+
+// Example usage
+let numbers = [1, 2, 3, 4, 5];
+let result = sumOfNumbers(numbers);
+console.log(result);
+
+//IIFE
+let result = (function(arr) {
+    return arr.reduce((sum, num) => sum + num, 0);
+  })([1, 2, 3, 4, 5]);
+  
+  console.log(result);
+  

@@ -1,0 +1,18 @@
+//Anonymous Function
+let convertToTitleCaps = function(arr) {
+  return arr.map(str => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase());
+};
+
+// Example usage
+let strings = ["hello", "world", "javascript"];
+let titleCapsArray = convertToTitleCaps(strings);
+console.log(titleCapsArray);
+
+//IIFE
+let titleCapsArray = (function(arr) {
+    return arr.map(str => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase());
+  })(["hello", "world", "javascript"]);
+  
+  console.log(titleCapsArray);
+  
+

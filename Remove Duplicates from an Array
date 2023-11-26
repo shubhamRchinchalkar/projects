@@ -1,0 +1,17 @@
+//Anonymous Function
+let removeDuplicates = function(arr) {
+  return arr.filter((value, index, self) => self.indexOf(value) === index);
+};
+
+// Example usage
+let numbers = [1, 2, 3, 2, 4, 5, 3, 6];
+let uniqueNumbers = removeDuplicates(numbers);
+console.log(uniqueNumbers);
+
+//iife
+let uniqueNumbers = (function(arr) {
+    return arr.filter((value, index, self) => self.indexOf(value) === index);
+  })([1, 2, 3, 2, 4, 5, 3, 6]);
+  
+  console.log(uniqueNumbers);
+  
