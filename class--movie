@@ -1,1 +1,24 @@
+class Movie {
+    constructor(title, studio, rating = "PG") {
+        this.title = title;
+        this.studio = studio;
+        this.rating = rating;
+    }
+    static getPG(movies) {
+        return movies.filter(movie => movie.rating === "PG");
+    }
+}
+const tiger3 = new Movie("tiger", "Yash Raj Films", "PG-13");
+
+console.log("Title:", tiger3.title);
+console.log("Studio:", tiger3.studio);
+console.log("Rating:", tiger3.rating);
+
+const movies = [
+    new Movie("Movie1", "Studio1", "PG"),
+    new Movie("Movie3", "Studio3", "PG"),
+  
+];
+const pgMovies = Movie.getPG(movies);
+console.log("Movies with rating 'PG':", pgMovies);
 

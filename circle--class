@@ -1,0 +1,36 @@
+class Circle {
+    // Properties
+    private radius: number;
+
+    // Constructor
+    constructor(radius: number) {
+        this.radius = radius;
+    }
+
+    // Methods
+    // Getter for radius
+    getRadius(): number {
+        return this.radius;
+    }
+
+    // Setter for radius
+    setRadius(radius: number): void {
+        this.radius = radius;
+    }
+
+    // Calculate the area of the circle
+    calculateArea(): number {
+        return Math.PI * Math.pow(this.radius, 2);
+    }
+
+    // Calculate the circumference of the circle
+    calculateCircumference(): number {
+        return 2 * Math.PI * this.radius;
+    }
+}
+
+// Example usage
+const myCircle = new Circle(5);
+console.log("Radius:", myCircle.getRadius());
+console.log("Area:", myCircle.calculateArea());
+console.log("Circumference:", myCircle.calculateCircumference());
