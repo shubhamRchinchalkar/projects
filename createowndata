@@ -1,0 +1,40 @@
+var sampleJson = {
+  "name": "SHUBHAM R CHINCHALKAR",
+  "age": 25,
+  "city": "amravati",
+  "hobbies": ["Reading", "Traveling", "Coding"],
+  "address": {
+    "street": "3rd street",
+    "zip": "12345",
+  },
+};
+
+// Using for...in loop
+console.log("Using for...in loop:");
+for (var key in sampleJson) {
+  console.log(key + ": " + sampleJson[key]);
+}
+
+// Using for...of loop
+console.log("\nUsing for...of loop:");
+try {
+  for (var value of Object.values(sampleJson)) {
+    console.log(value);
+  }
+} catch (error) {
+  console.error("for...of loop is not supported for objects in this environment.");
+}
+
+// Using forEach loop on array property
+console.log("\nUsing forEach loop on array property:");
+if (Array.isArray(sampleJson.hobbies)) {
+  sampleJson.hobbies.forEach(hobby => {
+    console.log(hobby);
+  });
+}
+
+// Using forEach loop on object property
+console.log("\nUsing forEach loop on object property:");
+Object.entries(sampleJson.address).forEach(([key, value]) => {
+  console.log(key + ": " + value);
+});
