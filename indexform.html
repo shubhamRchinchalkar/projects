@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM Manipulation of Form</title>
+    <link rel="stylesheet" href="./styleform.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Form</h1>
+      <form id="form" class="form form-group">
+        <label for="address">Address:</label>
+        <div class="form-group">
+          <textarea
+            name="address"
+            id="address"
+            cols="20"
+            rows="10"
+            placeholder="Enter you address"
+          ></textarea>
+        </div>
+        <label for="firstName">First name:</label>
+        <input
+          type="text"
+          id="first-name"
+          name="first-name"
+          placeholder="Enter your first name"
+        /><br />
+
+        <label for="lastName">Last name:</label>
+        <input
+          type="text"
+          id="last-name"
+          name="last-name"
+          placeholder="Enter your last name..."
+        /><br />
+
+        <label for="pincode">Pin Code:</label>
+        <div class="form">
+          <input
+            type="text"
+            id="pincode"
+            name="pincode"
+            placeholder="Enter your pincode"
+          />
+        </div>
+        <br />
+
+        <label for="gender">Gender:</label>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male" />
+
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female" />
+
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="other" />
+
+        <br />
+
+        <label for="state">State:</label>
+        <input
+          type="text"
+          id="state"
+          name="state"
+          placeholder="Enter your State of residence"
+        /><br />
+
+        <label for="country">Country:</label>
+        <input
+          type="text"
+          id="country"
+          name="country"
+          placeholder="Enter Your Country name"
+        /><br />
+
+        <button
+          class="btn btn-primary"
+          type="submit"
+          id="submit"
+          value="Submit"
+        >
+          Submit
+        </button>
+      </form>
+
+      <table  class="table">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <br>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>Pin Code</th>
+            <th>Gender</th>
+            <th>State</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+
+    <script src="./scriptform.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+  </body>
+</html>
