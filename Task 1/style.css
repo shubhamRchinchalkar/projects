@@ -1,0 +1,33 @@
+.card img {
+ width: 300px;
+ height: 300px;
+ border-radius: 12px;
+}
+
+h1{
+    text-align: center;
+}
+
+
+.container {
+    text-align: center;
+    padding-left: 35%;
+    background-color: deepskyblue;
+}
+.title{
+    background-color: aquamarine;
+}
+
+.card{
+    background-color: rgb(67, 176, 28);
+    padding: 20px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+  }
+

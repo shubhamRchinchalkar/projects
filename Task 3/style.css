@@ -1,0 +1,25 @@
+body{
+    background: gold;
+}
+
+.card{
+    background-color: aquamarine;
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+    padding: 30px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    overflow: hidden;
+}
+
+.title{
+    text-align: center;;
+}
+
+ .card:hover {
+    transform: translateY(-10px);
+  }
